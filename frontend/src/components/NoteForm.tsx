@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Box, Button, TextField } from '@mui/material'
+import { Button, TextField } from '@mui/material'
 import CreatableReactSelect from 'react-select/creatable'
 import './NoteForm.css'
-import { Tag, Note, NoteData} from '../App'
+import { Tag, NoteData} from '../App'
 import { v4 as uuid } from 'uuid';
 import { useNavigate } from 'react-router-dom'
 
@@ -19,7 +19,7 @@ const NoteForm = ({onSubmit, onAddTag, availableTags, note}: NoteFormProps) => {
     const [selectedTags, setSelectedTags] = useState<Tag[]>(note?.tags || []);
     const navigate = useNavigate();
 
-    const handleSubmit = (e: React.FormEvent): void => {
+    const handleSubmit = (): void => {
         
         onSubmit({
             title, 
@@ -91,7 +91,7 @@ const NoteForm = ({onSubmit, onAddTag, availableTags, note}: NoteFormProps) => {
 
         <div className='form-btns'>
             <Button variant='contained'color='primary' onClick={handleSubmit}>Save</Button>
-            <Button variant='contained' color='error' onClick={(e) => navigate("/")}>Cancel</Button>
+            <Button variant='contained' color='error' onClick={() => navigate("/")}>Cancel</Button>
         </div>
     </form>
   )

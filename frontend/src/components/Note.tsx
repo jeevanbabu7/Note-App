@@ -34,9 +34,8 @@ const Note = ({onDelete}: NoteProps) => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    
 
-    function handleDelete(e: React.FormEvent) {
+    function handleDelete() {
         onDelete(Note.id);
         navigate('/');
     }

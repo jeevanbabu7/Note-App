@@ -1,5 +1,5 @@
 import { Button } from '@mui/material'
-import React, { useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import './NoteList.css'
 import ReactSelect from 'react-select'
 import { Link } from 'react-router-dom'
