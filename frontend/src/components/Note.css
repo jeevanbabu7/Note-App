@@ -1,0 +1,30 @@
+.note-tags {
+
+    max-width: 350px;
+    display: flex;
+    gap: 1rem;
+    font-size: small;
+    flex-wrap: wrap;
+    max-width: 350px;
+    
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: start;
+}
+
+.note-header {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+@media (max-width: 800px) {
+    .note-header {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+    }
+}

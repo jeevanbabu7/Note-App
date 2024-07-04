@@ -1,0 +1,37 @@
+.note-wrapper {
+    height: 10rem;
+    width: 15rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    transition: ease-in-out 100ms;
+    transition-duration: .15s;
+    border: .1px solid rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.note-wrapper > h2 {
+    color: #0665c4;
+}
+.note-wrapper:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card-tags{
+    display: flex;
+    gap: 1rem;
+}
+
+.tag {
+    background-color: lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+a {
+    color: rgb(72, 72, 72);
+}
