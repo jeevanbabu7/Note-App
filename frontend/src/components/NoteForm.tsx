@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Button, TextField } from '@mui/material'
 import CreatableReactSelect from 'react-select/creatable'
 import './NoteForm.css'
